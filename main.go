@@ -12,7 +12,7 @@ func runCommand(url string, wg *sync.WaitGroup) {
 	defer wg.Done()
 
 	// Set the working directory to /root/downloads
-	if err := os.Chdir("/root/downloads"); err != nil {
+	if err := os.Chdir("/media/videobucket"); err != nil {
 		fmt.Printf("Error changing working directory: %v\n", err)
 		return
 	}
